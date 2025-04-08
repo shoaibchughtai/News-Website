@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="main-nav container flex">
+        <a href="#" class="company-logo">
+          <img src="bbc-logo.png" alt="company logo" />
+        </a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li class="hover-links nav-item">
+              <a href="#" onclick="onNavItemClick('Sports')">Sports</a>
+            </li>
+            <li class="hover-links nav-item">
+              <a href="#" onclick="onNavItemClick('Politics')">Politics</a>
+            </li>
+            <li class="hover-links nav-item">
+              <a href="#" onclick="onNavItemClick('Tech')">Tech</a>
+            </li>
+            <li class="hover-links nav-item">
+              <a href="#" onclick="onNavItemClick('Finance')">Finance</a>
+            </li>
+          </ul>
+        </div>
+        <div class="search-bar flex">
+          <input type="text" class="news-input" placeholder="e.g. Science" />
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div id="cards-container" class="card-container container flex"></div>
+    </main>
+
+    <template id="template-news-card">
+      <div class="card">
+        <div class="card-header">
+          <img
+            src="https://placehold.co/400x200"
+            alt="News Image"
+            class="news-img"
+          />
+        </div>
+        <div class="card-content">
+          <h3 class="news-title">This is the title</h3>
+          <h6 class="news-source">End Gadget 07/04/2025</h6>
+          <p class="news-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ex
+            suscipit voluptates iure natus fuga consequatur odio, labore odit.
+            Soluta qui impedit vero sunt quam!
+          </p>
+        </div>
+      </div>
+    </template>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>Made with ❤️ by M.Shoaib Khan</p>
+        <div class="social-icons">
+          <a href="#" target="_blank"><i class="ri-facebook-fill"></i></a>
+          <a href="#" target="_blank"><i class="ri-instagram-line"></i></a>
+          <a href="#" target="_blank"><i class="ri-twitter-x-line"></i></a>
+          <a href="#" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
